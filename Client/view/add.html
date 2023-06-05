@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/main.css" />
+    <script type="text/javascript" src="../javascripts/helpers/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../javascripts/controllers/addCtrl.js"></script>
+    <script type="text/javascript" src="../javascripts/controllers/viewCtrl.js"></script>
+</head>
+
+<body>
+    <header id="header">
+    </header>
+
+
+
+    <div class="content">
+        <div class="title-page" id="add-title">Ajout</div> 
+        <div class="container-choose">
+            <div id="devRubrique">
+                Rubrique
+            </div>
+
+            <div id="devPosts">
+                Documents
+            </div>
+        </div>
+        <div class="container-form container-add">
+
+
+
+
+            <div id="formRubriques">
+                <div class="container-title">
+                    <div class="col">
+                        Ajouter une rubrique
+                    </div>
+                </div>
+                <div id="alert"></div>
+
+                <div class="container-champ">
+
+                    <div class="col-champ">
+                        <input class="input-champ" type="text" id="newRubrique" name="newRubrique" placeholder="Nom de la rubrique">
+                    </div>
+                    <div class="col-champ">
+                        <select class="select-rubriques input-champ" id="selectRubrique" name="selectRubrique">
+                        </select>
+                    </div>
+                </div>
+                <div class="col-champ">
+                    <input class="button-champ" id="formAddRubrique" value="Envoyer" type="submit">
+                </div>
+            </div>
+
+
+
+
+
+            <div id="formPosts">
+                <div class="container-title">
+                    <div class="col">
+                        Ajouter un document
+                    </div>
+                </div>
+                <div id="alertPost"></div>
+
+                <div class="container-champ">
+
+                    <div class="col-champ">
+                        <input class="input-champ" type="text" id="titrePost" name="titrePost" placeholder="Titre">
+                    </div>
+                    <div class="col-champ">
+                        <textarea class="input-champ" type="textarea" rows="1" id="description" name="description" placeholder="Description"></textarea>
+                    </div>
+
+                    <div class="col-champ">
+                        <select class=" input-champ select-rubriques" id="selectRubriquePost" name="selectRubriquePost">
+
+                        </select>
+                    </div>
+                    <div class="col-champ">
+
+                        <input class="button-champ" type="file" id="fileInput">
+
+                    </div>
+                </div>
+                <div class="col-champ">
+                    <input class="button-champ" id="formAddPost" value="Envoyer" type="submit">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
